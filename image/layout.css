@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    background-color: blueviolet;
+    color: greenyellow;
+    margin: 0%;
+}
+#nav{border: 2px solid black;
+    overflow: auto;
+    background-color: brown;
+    
+}
+/*inside the one tag where can use only one float property */
+
+ul{
+    float: right;
+    }
+
+
+
+li{
+    float: left;
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 8px;
+    margin: 3px;
+    background-color: forestgreen;}
+a{
+    text-decoration: none;
+}
+aside{
+    height: 300px;
+    width: 25%;
+    float: left;
+    background-color: tomato;
+}
+section{
+    height: 300px;
+    width: 50%;
+    background-color: indianred;
+    float: left;
+}
+article
+{
+height: 300px;
+width: 25%;
+background-color: rgb(255,0,15);
+float: right;
+
+}
+main{
+    height: 600px;
+    background-color: salmon;
+    
+}
+img{
+  border-radius: 100px;
+}
