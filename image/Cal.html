@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+       div {
+            background-color: white;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+            border: 3px solid black;
+            width: 50%;
+            height: 80%;
+        }
+        h1 {
+            border-radius: 10%;
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: indianred;
+ }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Claculator</h1>
+        <label for="">Number1</label>
+       <input type="text" id="input1" placeholder="number" /> 
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+<br><br><br>
+
+<label for="">Number2</label>
+<input type="text" id="input2" placeholder="number" />
+<button onclick="mul()">*</button>
+<button onclick="divi()">/</button>
+<br><br><br>
+
+<label for="">Result</label>
+<input type="text" id="output" placeholder="Result"/>
+<button onclick="clr()">clear</button>
+ </div>
+
+ <script>
+    function add()
+    {
+        var x=document.getElementById("input1").value
+        var y=document.getElementById("input2").value
+
+        z=parseInt(x) + parseInt(y)
+        document.getElementById("output").value = z
+    }
+        
+    function sub()
+    {
+        var x=document.getElementById("input1").value
+        var y=document.getElementById("input2").value
+        z=parseInt(x) - parseInt(y)
+        document.getElementById("output").value = z
+    }
+    function mul()
+    {
+        var x=document.getElementById("input1").value
+        var y=document.getElementById("input2").value
+        z=parseInt(x) * parseInt(y)
+        document.getElementById("output").value = z
+    }
+
+    function divi()
+    {
+        var x=document.getElementById("input1").value
+        var y=document.getElementById("input2").value
+        z=parseInt(x) / parseInt(y)
+        document.getElementById("output").value = z
+    }
+
+    function clr()
+    {
+        document.getElementById("input1").value = ""
+        document.getElementById("input2").value = ""
+        document.getElementById("output").value =""
+    }
+ </script>
+</body>
+</html>
