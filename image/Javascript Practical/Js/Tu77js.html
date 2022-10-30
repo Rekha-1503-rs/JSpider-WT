@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #test {
+        background-color: bisque;
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test" class="abc">
+      <!-- <h2>heading</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sit nam
+        quas officiis veniam corrupti id. Laudantium mollitia corporis sit!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sit nam
+        quas officiis veniam corrupti id. Laudantium mollitia corporis sit!
+      </p> -->
+    </div>
+  </body>
+  <script>
+    // var parentElement = document.getElementById("test");
+    // var target = document.getElementById("abc");
+
+    // var find = parentElement.contains(target);
+    // console.log(find);
+    var target = document.getElementById("test");
+    var find = target.hasChildNodes();
+    console.log(find);
+  </script>
+</html>

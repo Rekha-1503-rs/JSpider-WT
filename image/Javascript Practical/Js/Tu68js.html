@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="outer">
+      <h2>outer</h2>
+      <div id="inner">
+        <h2 id="chid-Head">Inner</h2>
+        <div>A</div>
+        <div>B</div>
+        <div id="child-C">C</div>
+        <div>D</div>
+        <div id="child-E">E</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // document.getElementById("inner").lastElementChild.style.background = "blue";
+    // document.getElementById("child-E").nextElementSibling.style.background =
+    //   "yellow";
+
+    var a = document.getElementById("child-C").previousSibling;
+
+    // var a = document.body.parentElement;
+    console.log(a);
+  </script>
+</html>

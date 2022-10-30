@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="text" id="input"> <p id="result"></p>
+</body>
+<script>
+    var input = document.getElementById('input'); 
+        var result = document.getElementById('result'); 
+        function isPositive(num) 
+        { 
+            return num >0; 
+        } 
+        function isEven(num) 
+        { 
+            return num % 2 === 0; 
+        } 
+        input.addEventListener('input', function() 
+        { 
+            var num = Number(input.value); 
+            if (isNaN(num)) 
+            { 
+                result.textContent = 'Please enter a number.';
+                 return; 
+            } 
+            if (!isPositive(num)) 
+            { result.textContent = 'Please enter a positive value:'; 
+                return; 
+            } 
+            var output; 
+            if (isEven(num)) 
+            { 
+                output = [num + 2, num + 4, num + 6]; 
+            } 
+            else 
+            { 
+                output = [num + 2, num + 4, num + 6]; 
+            } 
+    result.textContent = output.join(', '); 
+        });
+</script>
+
+</html>

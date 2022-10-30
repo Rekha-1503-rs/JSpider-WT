@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #box {
+        width: 500px;
+        height: 200px;
+        padding: 30px;
+        border: 3px solid black;
+        /* background: linear-gradient(-45deg, red, yellow, hotpink, teal, khaki); */
+        /* background: linear-gradient(red, rgba(255, 0, 0, 0.6)); */
+        background: repeating-linear-gradient(
+          to right,
+          red,
+          yellow 10%,
+          green 20%
+        );
+      }
+      #box2 {
+        width: 800px;
+        height: 300px;
+        padding: 30px;
+        margin: 10px;
+        border: 3px solid black;
+        /* background: radial-gradient(circle, red 5%, yellow 4%, green 40%); */
+        background: radial-gradient(
+          closeset-corner at 10% 30%,
+          red,
+          yellow,
+          green
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <div id="box">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, quis!
+      </p>
+    </div>
+    <div id="box2">
+      <h2>Radial Gradient</h2>
+    </div>
+  </body>
+</html>

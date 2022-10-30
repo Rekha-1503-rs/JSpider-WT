@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+.container{
+    display: flex;
+}
+.card
+{
+    padding:23px 12px ;
+    margin:23px 12px ;
+    /* border: 2px solid brown; */
+    background-color: bisque;
+    /* box-shadow:offset-x offset-y color */
+    /* box-shadow:offset-x offset-y  blur-radius color */
+/* box-shadow:offset-x offset-y  blur radius  spread radius color */
+
+
+
+      /* box-shadow: 10px 13px  green; Down */
+      /* box-shadow: -10px -13px green; up */
+      /* box-shadow: 7px 5px 10px hotpink ; */
+      /* box-shadow: -7px -5px 10px yellow; */
+      /* box-shadow: -7px -5px 10px 34px peru; */
+   
+      box-shadow: inset 3px 5px olivedrab;
+      box-shadow:3px 5px orangered, 4px 6px fuchsia ;
+    }
+    .card h1{
+/* text-shadow: 3px 4px green; */
+text-shadow: 3px 4px 2px red;
+text-shadow: -3px -4px 2px hotpink;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+           <h1>This is c++ course</h1>
+           <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Voluptate consequuntur
+            sed minima aliquam quam et doloremque laborum deleniti,
+             tenetur consectetur?</p>
+        </div>
+        <div class="card" id="card2">
+           <h1> This is html course</h1>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt vel reprehenderit unde laborum itaque consequatur
+             eligendi sunt accusantium tempore doloremque?</p>
+        </div>
+        <div class="card" id="card3">
+           <h1>This is css course</h1>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+             elit. Atque illum molestias aspernatur corrupti maiores.
+             Consequuntur possimus voluptate ex iure neque.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+     'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+}
+.item{
+background-color: blue;
+border: 4px solid brown;
+padding: 10px 22px;
+}
+#navbar{
+grid-area: navbar;
+}
+#section{
+grid-area: section;
+}
+#aside{
+grid-area: aside;
+}
+footer{
+grid-area: footer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+<div id="navbar" class="item">
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Ipsa asperiores non adipisci natus! Totam, nihil iusto autem deleniti recusandae inventore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate rem corporis eligendi odit aspernatur? Cumque, impedit veniam consequuntur corporis fuga porro id deleniti, suscipit odit aut excepturi
+      quae tempora laudantium cum earum accusamus nulla magnam libero quia reiciendis, facere esse.
+    </div>
+        
+       <div id="section" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero maiores provident incidunt dolor amet
+             necessitatibus molestias nisi neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam, minima dolores fugiat atque sequi aut iste sunt, hic perferendis, eos nobis? Labore hic ut doloribus veniam numquam voluptatum! Architecto accusantium
+              velit soluta modi quidem sapiente dolores nesciunt quod tempora.
+            Rerum aliquid, deserunt placeat laborum voluptates veritatis similique id fuga molestiae molestias?
+        </div>
+
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             At quo magni asperiores id neque nesciunt itaque ad, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum mollitia dolorem repudiandae, fugiat provident, laudantium neque ad harum illum iure temporibus vel impedit maxime recusandae tempora et labore ratione, 
+             animi deleniti explicabo! Ad hic quae voluptatem nihil dignissimos! Nulla, modi! provident odit modi!
+        </div>
+    </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Iste deleniti laboriosam excepturi corporis assumenda Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum illo dolorem ab rerum sapiente quidem, culpa iure atque reprehenderit ipsum eaque adipisci earum totam. Reprehenderit dolores
+              ipsam qui cumque natus quibusdam facere aut quos cum tempora. Quisquam, minus magni. iure aut vitae minus rem eligendi!
+       
+            </footer>
+</body>
+</html>

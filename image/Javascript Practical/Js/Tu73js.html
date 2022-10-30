@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <div id="text">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+        alias veritatis deserunt eligendi facere porro aut aliquam quaerat rem
+        molestiae?
+      </p>
+      <h3>Heading3</h3>
+    </div>
+  </body>
+  <script>
+    var a = document.createElement("h2");
+    var b = document.createTextNode("This is just Text");
+    // var c = document.createComment("This is just comment");
+
+    a.appendChild(b);
+
+    document.getElementById("text").appendChild(a);
+    // document.getElementById("text").appendChild(c);
+    var target = document.getElementById("text");
+    target.insertBefore(a, target.childNodes[2]);
+    console.log(a);
+  </script>
+</html>
