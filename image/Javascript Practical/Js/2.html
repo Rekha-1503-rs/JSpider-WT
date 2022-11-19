@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div,
+      section,
+      span,
+      ul,
+      li,
+      a,
+      header {
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+      }
+      #menu li {
+        list-style: none;
+        display: inline;
+        margin: 20px;
+      }
+      #menu li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+      section {
+        width: 100%;
+        float: left;
+        height: 100vh;
+        position: relative;
+      }
+      #home {
+        background-color: darkolivegreen;
+      }
+      #About {
+        background-color: darkcyan;
+      }
+      #Product {
+        background-color: darkorange;
+      }
+      #Contact {
+        background-color: darkkhaki;
+      }
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rebeccapurple;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="home">
+      <header>
+        <a href="#"></a>
+        <ul id="menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About us</a></li>
+          <li><a href="#Product">Product</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </header>
+    </section>
+    <h1>This is Home Page</h1>
+    <section id="About"><h1>This is About Page</h1></section>
+    <section id="Product"><h1>This is Product Page</h1></section>
+    <section id="Contact"><h1>This is Contact Page</h1></section>
+  </body>
+</html>

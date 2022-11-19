@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        background: linear-gradient(greenyellow, hotpink);
+      }
+      nav .box header {
+        font-size: 25px;
+        font-weight: bolder;
+        float: left;
+        color: ghostwhite;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+      nav ul {
+        float: right;
+        display: inline-flex;
+        list-style: none;
+      }
+      nav li a {
+        font: 30px;
+        text-transform: uppercase;
+        padding: 0px 30px;
+        color: hotpink;
+        text-decoration: none;
+      }
+      nav li a:hover {
+        color: firebrick;
+        transition: all 0.4 ease 0%;
+      }
+      .content img {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+      .F1 {
+        width: 100%;
+        height: 50px;
+        background: peachpuff;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="box">
+        <header>Navbar</header>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+    <div class="content"><img src="./Ma.jpg" alt="" /></div>
+    <aside>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum
+      porro rem modi officiis facere quam delectus. Alias, ipsam dignissimos.
+    </aside>
+    <footer class="F1">@copyright</footer>
+  </body>
+</html>
